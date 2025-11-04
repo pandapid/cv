@@ -20,9 +20,9 @@ SUPPORTED_IN = {".csv", ".txt", ".tsv", ".xlsx", ".vcf"}
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Halo! Kirimkan berkas kontak (CSV/TXT/TSV/XLSX/VCF).
-" \
-        "Setelah diunggah, pilih format tujuan yang diinginkan.")
+        """Halo! Kirimkan berkas kontak (CSV/TXT/TSV/XLSX/VCF).
+Setelah diunggah, pilih format tujuan yang diinginkan."""
+    )
 
 
 def options_for_extension(ext: str):
@@ -131,4 +131,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
